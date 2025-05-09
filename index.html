@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/reset.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<link rel="stylesheet" href="css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+			defer
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/js/uikit.min.js"
+			defer
+		></script>
+		<!-- <link
+			href="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/css/uikit.min.css"
+			rel="stylesheet"
+		/> -->
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+			deffer
+		></script>
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+			deffer
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+			deffer
+		></script>
+		<script src="js/main.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="header__logo logo">Plant</a>
+					<nav class="header__menu">
+						<ul class="header__menu-list">
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Home</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Services</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">About Us</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Blog</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="header__button-box">
+						<button class="header__button transparent btn-login-popup">
+							Login
+						</button>
+						<button class="header__button btn btn-register-popup">
+							Sing Up
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-menu">
+				<ul class="mobile-menu__list">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<div class="mobile-menu__buttons">
+					<button class="header__button transparent btn-login-popup">
+						Login
+					</button>
+					<button class="header__button btn btn-register-popup">Sign Up</button>
+				</div>
+				<button class="mobile-menu__close" aria-label="Закрыть меню">
+					&times;
+				</button>
+			</div>
+		</header>
+		<div class="overlay"></div>
+
+		<div class="wrapper" data-type="login">
+			<span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+			<div class="form__box login">
+				<h2 class="form__box-title">Login</h2>
+				<form action="#">
+					<div class="input__box">
+						<span class="icon"><ion-icon name="mail"></ion-icon></span>
+						<input type="e-mail" required />
+						<label>Email</label>
+					</div>
+					<div class="input__box">
+						<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+						<input type="password" required />
+						<label>Password</label>
+					</div>
+					<div class="remember__forgot">
+						<label><input type="checkbox" />Remember me</label>
+						<a href="#" class="forgot">Forgot password?</a>
+					</div>
+					<div class="button btn" type="submit">Login</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="wrapper" data-type="register">
+			<span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+			<div class="form__box register">
+				<h2 class="form__box-title">Registration</h2>
+				<form action="#">
+					<div class="input__box">
+						<span class="icon"><ion-icon name="person"></ion-icon></span>
+						<input type="text" required />
+						<label>Username</label>
+					</div>
+					<div class="input__box">
+						<span class="icon"><ion-icon name="mail"></ion-icon></span>
+						<input type="e-mail" required />
+						<label>Email</label>
+					</div>
+					<div class="input__box">
+						<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+						<input type="password" required />
+						<label>Password</label>
+					</div>
+					<div class="remember__forgot">
+						<label
+							><input type="checkbox" />I agree to the terms & conditions</label
+						>
+					</div>
+					<div class="button btn" type="submit">Register</div>
+				</form>
+			</div>
+		</div>
+
+		<section class="banner">
+			<div class="container">
+				<div class="banner__inner">
+					<div class="banner__content">
+						<h1 class="banner__title wow">Growing Beautiful Plants at Home</h1>
+						<p class="banner__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu,
+							tempor, accumsan sit amet nunc cursus. Nec tristique at in erat
+							lectus mas sa diam. Lectus elit, nulla elementum fringilla at.
+						</p>
+						<a href="#" class="banner__btn btn">Learn More</a>
+						<div class="banner__info">
+							<div
+								class="banner__item wow animate__animated animate__fadeIn"
+								data-wow-delay="0.5s"
+								data-wow-offset="90"
+							>
+								<h4 class="banner__item-title">
+									<span class="banner__applies" data-target="2500">0</span>+
+								</h4>
+								<p class="banner__item-subtitle">Delivery</p>
+							</div>
+							<div
+								class="banner__item wow animate__animated animate__fadeIn"
+								data-wow-delay="0.8s"
+								data-wow-offset="90"
+							>
+								<h4 class="banner__item-title">
+									<span class="banner__applies" data-target="1290">0</span>+
+								</h4>
+								<p class="banner__item-subtitle">Customers</p>
+							</div>
+							<div
+								class="banner__item wow animate__animated animate__fadeIn"
+								data-wow-delay="1.1s"
+								data-wow-offset="90"
+							>
+								<h4 class="banner__item-title">
+									<span class="banner__applies" data-target="1310">0</span>+
+								</h4>
+								<p class="banner__item-subtitle">Product</p>
+							</div>
+						</div>
+					</div>
+					<div class="banner__images">
+						<img
+							src="images/img/klipartz.webp"
+							alt="Plant"
+							class="banner__img"
+						/>
+						<!-- Точка с верху -->
+						<div class="banner__point banner__point--top">
+							<div class="point__circle">
+								<span class="point__inner-dot"></span>
+								<span class="point__line"></span>
+							</div>
+							<a href="#" class="point__text-btn">Cactus Thorn</a>
+						</div>
+
+						<!-- Точка справа -->
+						<div class="banner__point banner__point--left">
+							<div class="point__circle">
+								<span class="point__inner-dot"></span>
+								<span class="point__line--left"></span>
+							</div>
+							<a href="#" class="point__text-btn">Cactus stem</a>
+						</div>
+
+						<!-- Точка снизу -->
+						<div class="banner__point banner__point--bottom">
+							<div class="point__circle">
+								<span class="point__inner-dot"></span>
+								<span class="point__line"></span>
+							</div>
+							<a href="#" class="point__text-btn">Plant Media</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img
+				class="banner__leavels"
+				src="images/img/banner_leaves.png"
+				alt="fon leaves"
+			/>
+		</section>
+
+		<section class="collection">
+			<div class="container">
+				<div class="collection__inner">
+					<div class="collection__content">
+						<h3
+							class="collection__title wow animate__animated animate__fadeInLeft"
+							data-wow-delay="0.3s"
+						>
+							We have lots of plants collection for you and your family
+						</h3>
+						<a href="#" class="collection__link">
+							See all collection
+							<img src="images/icons/Arrow.svg" alt="" width="16" />
+						</a>
+					</div>
+					<div class="collection__box">
+						<div
+							class="collection__item wow animate__animated animate__fadeInUpBig"
+							data-wow-offset="100"
+							data-wow-delay="0.4s"
+						>
+							<img
+								src="images/img/collection_1.webp"
+								alt="kollektsiya1"
+								class="collection__img"
+							/>
+						</div>
+						<div
+							class="collection__item wow animate__animated animate__fadeInUpBig"
+							data-wow-offset="100"
+							data-wow-delay="0.6s"
+						>
+							<img
+								src="images/img/collection_2.webp"
+								alt="kollektsiya1"
+								class="collection__img"
+							/>
+						</div>
+						<div
+							class="collection__item wow animate__animated animate__fadeInUpBig"
+							data-wow-offset="100"
+							data-wow-delay="0.8s"
+						>
+							<img
+								src="images/img/collection_3.webp"
+								alt="kollektsiya1"
+								class="collection__img"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="container">
+				<div class="about__inner">
+					<div
+						class="about__box about__image--shadow wow animate__animated animate__fadeInLeft"
+						data-wow-delay="0.5s"
+						data-wow-offset="200"
+					>
+						<!-- <div class="about__box about__image--shadow"> -->
+						<img
+							class=""
+							src="images/img/about_bg.webp"
+							alt=""
+							width="446"
+							height="440"
+						/>
+					</div>
+					<div
+						class="about__content wow animate__animated animate__fadeInRight"
+						data-wow-delay="0.5s"
+						data-wow-offset="200"
+					>
+						<!-- <div class="about__content"> -->
+						<h4 class="about__subtitle">About Us</h4>
+						<h3 class="about__title">
+							Continue to Develop to Became Global Company
+						</h3>
+						<p class="about__text-light">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu,
+							tempor, accumsan sit amet nunc cursus. Nec tristique at in erat
+							lectus mas sa diam. Lectus elit, nulla elementum fringilla at.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu,
+							tempor, accumsan sit amet nunc cursus. Nec tristique at in erat
+							lectus mas sa diam. Lectus elit, nulla elementum fringilla at.
+						</p>
+						<p class="about__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu,
+							tempor, accumsan sit amet nunc cursus.
+						</p>
+						<a href="#" class="about__button btn">Read More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="product">
+			<div class="container">
+				<div class="product__inner animated-wrapper">
+					<h3
+						class="product__title wow animate__animated animate__lightSpeedInLeft animate__slower"
+						data-wow-offset="100"
+						data-wow-delay="0.5s"
+					>
+						Our Best Product
+					</h3>
+
+					<div uk-filter="target: .js-filter" class="animated-wrapper">
+						<ul
+							class="uk-subnav uk-subnav-pill wow animate__animated animate__lightSpeedInRight animate__slower"
+							data-wow-offset="100"
+							data-wow-delay="0.5s"
+						>
+							<!-- Установили новую вкладу "Все" и сделали её активной изначально  -->
+							<li class="uk-active" uk-filter-control><a href="#">All</a></li>
+
+							<li uk-filter-control="[data-product='plants']">
+								<a href="#">New Plants</a>
+							</li>
+							<li uk-filter-control="[data-product='new']">
+								<a href="#">New Arrivals</a>
+							</li>
+							<li uk-filter-control="[data-product='sale']">
+								<a href="#">Sale</a>
+							</li>
+						</ul>
+						<ul
+							class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center product__cart-item"
+							uk-grid
+						>
+							<!-- Название data-product -->
+							<li
+								data-product="new"
+								class="product__cart wow animate__animated animate__fadeInUp"
+								data-wow-offset="100"
+								data-wow-delay="0.6s"
+							>
+								<div
+									class="uk-card uk-card-default uk-card-body product__card-item linen"
+								>
+									<div class="product__cart-img">
+										<img src="images/img/product_1.webp" alt="" />
+									</div>
+									<h4 class="product__subtitle">Outdoor Plant</h4>
+									<div class="product__card-rating">
+										<span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										>
+									</div>
+									<span class="product__card-price">$50.00</span>
+								</div>
+							</li>
+							<li
+								data-product="plants"
+								class="product__cart wow animate__animated animate__fadeInUp"
+								data-wow-offset="100"
+								data-wow-delay="0.8s"
+							>
+								<div
+									class="uk-card uk-card-default uk-card-body product__card-item inen"
+								>
+									<div class="product__cart-img">
+										<img src="images/img/product_2.webp" alt="" />
+									</div>
+									<h4 class="product__subtitle">Monstera Plant</h4>
+									<div class="product__card-rating">
+										<span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star">★</span>
+									</div>
+									<span class="product__card-price">$50.00</span>
+								</div>
+							</li>
+							<li
+								data-product="plants"
+								class="product__cart wow animate__animated animate__fadeInUp"
+								data-wow-offset="100"
+								data-wow-delay="1.0s"
+							>
+								<div
+									class="uk-card uk-card-default uk-card-body product__card-item inen platinum"
+								>
+									<div class="product__cart-img">
+										<img src="images/img/product_3.webp" alt="" />
+									</div>
+									<h4 class="product__subtitle">Pottel Plant</h4>
+									<div class="product__card-rating">
+										<span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										>
+									</div>
+									<span class="product__card-price">$50.00</span>
+								</div>
+							</li>
+							<li
+								data-product="sale"
+								class="product__cart wow animate__animated animate__fadeInUp"
+								data-wow-offset="100"
+								data-wow-delay="1.2s"
+							>
+								<div
+									class="uk-card uk-card-default uk-card-body product__card-item inen lavender"
+								>
+									<div class="product__cart-img">
+										<img src="images/img/product_4.webp" alt="" />
+									</div>
+									<h4 class="product__subtitle">Indoor Plant</h4>
+									<div class="product__card-rating">
+										<span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										><span class="product__card-star product-card__star--active"
+											>★</span
+										>
+									</div>
+									<span class="product__card-price">$50.00</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div
+						class="product__button wow animate__animated animate__zoomIn"
+						data-wow-offset="100"
+						data-wow-delay="1.4s"
+					>
+						<a href="#" class="product__btn btn">View All</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="reviews">
+			<div class="container">
+				<div class="reviews__inner">
+					<div class="reviews__content">
+						<div
+							class="reviews__box wow animate__animated animate__backInLeft animate__slower"
+							data-wow-delay="0s"
+							data-wow-offset="200"
+						>
+							<h4 class="reviews__title">What Our Customers Says</h4>
+							<p class="reviews__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu,
+								tempor, accumsan sit amet nunc cursus. Nec tristique at in erat
+								lectus mas sa diam. Lectus elit, nulla elementum fringilla at.
+							</p>
+						</div>
+						<div
+							class="reviews__slider wow animate__animated animate__backInLeft animate__slower"
+							data-wow-delay="0.4s"
+							data-wow-offset="200"
+						>
+							<div class="reviews__swiper swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="reviews__item">
+											<div class="reviews__item-box">
+												<img src="images/img/reviews_1.webp" alt="" />
+												<div class="reviews__item-info">
+													<h4 class="reviews__item-title">Hasanul Islam</h4>
+													<p class="reviews__item-subtitle">Marketing CEO</p>
+												</div>
+											</div>
+											<p class="reviews__item-text">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Eu, tempor, accumsan sit amet nunc cursus. Nec tristique
+												at in erat lectus mas sa diam. Lectus elit, nulla
+												elementum fringilla at.
+											</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="reviews__item">
+											<div class="reviews__item-box">
+												<img src="images/img/reviews_1.webp" alt="" />
+												<div class="reviews__item-info">
+													<h4 class="reviews__item-title">Hasanul Islam</h4>
+													<p class="reviews__item-subtitle">Marketing CEO</p>
+												</div>
+											</div>
+											<p class="reviews__item-text">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Eu, tempor, accumsan sit amet nunc cursus. Nec tristique
+												at in erat lectus mas sa diam. Lectus elit, nulla
+												elementum fringilla at.
+											</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="reviews__item">
+											<div class="reviews__item-box">
+												<img src="images/img/reviews_1.webp" alt="" />
+												<div class="reviews__item-info">
+													<h4 class="reviews__item-title">Hasanul Islam</h4>
+													<p class="reviews__item-subtitle">Marketing CEO</p>
+												</div>
+											</div>
+											<p class="reviews__item-text">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Eu, tempor, accumsan sit amet nunc cursus. Nec tristique
+												at in erat lectus mas sa diam. Lectus elit, nulla
+												elementum fringilla at.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="button-reviews-prev swiper-button-prev">
+									<img src="images/icons/arrow-prev.svg" alt="" />
+								</div>
+								<div class="button-reviews-next swiper-button-next">
+									<img src="images/icons/arrow-next.svg" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="reviews__img wow animate__animated animate__backInRight animate__slower"
+						data-wow-delay="0.8s"
+						data-wow-offset="200"
+					>
+						<img src="images/img/reviews.webp" alt="reviews_bg" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section
+			class="subscribe wow animate__animated animate__fadeIn animate__slower"
+			data-wow-delay="0.8s"
+			data-wow-offset="125"
+		>
+			<div class="container">
+				<div class="subscribe__inner">
+					<div class="subscribe__wrapper">
+						<h4 class="subscribe__title">Subscribe Our Newsletter</h4>
+						<p class="subscribe__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, at
+							tempor, accumsan sit amet nunc cursus.
+						</p>
+						<form action="#" class="subscribe__form">
+							<input
+								type="email"
+								class="subscribe__input"
+								placeholder="Enter mail..."
+								required
+							/>
+							<button type="submit" class="subscribe__btn">Subscribe</button>
+						</form>
+					</div>
+					<div class="subscribe__img">
+						<img src="images/img/subscribe_bg.webp" alt="subscribe_bg" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="instagram">
+			<div class="container">
+				<div class="instagram__inner">
+					<h4
+						class="instagram__title wow animate__animated animate__fadeInDown animate__slower"
+						data-wow-delay="0.4s"
+						data-wow-offset="110"
+					>
+						Follow Us On Instagram
+					</h4>
+					<p
+						class="instagram__text wow animate__animated animate__fadeInDown animate__slower"
+						data-wow-delay="0.6s"
+						data-wow-offset="110"
+					>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, tempor,
+						accu msan sit amet nunc cursus. Nec tristique at in erat lectus
+					</p>
+					<div class="instagram__box">
+						<a
+							href=""
+							class="instagram__box-item wow animate__animated animate__fadeInUp"
+							data-wow-delay="0.2s"
+							data-wow-offset="110"
+							target="_blank"
+						>
+							<img
+								class="instagram-img"
+								src="images/img/instagram_1.webp"
+								alt=""
+							/>
+							<img
+								class="instagram-icons"
+								src="images/icons/instagram.svg"
+								alt=""
+							/>
+						</a>
+						<a
+							href=""
+							class="instagram__box-item wow animate__animated animate__fadeInUp"
+							data-wow-delay="0.4s"
+							data-wow-offset="110"
+							target="_blank"
+						>
+							<img
+								class="instagram-img"
+								src="images/img/instagram_2.webp"
+								alt=""
+							/>
+							<img
+								class="instagram-icons"
+								src="images/icons/instagram.svg"
+								alt=""
+							/>
+						</a>
+						<a
+							href=""
+							class="instagram__box-item wow animate__animated animate__fadeInUp"
+							data-wow-delay="0.6s"
+							data-wow-offset="110"
+							target="_blank"
+						>
+							<img
+								class="instagram-img"
+								src="images/img/instagram_3.webp"
+								alt=""
+							/>
+							<img
+								class="instagram-icons"
+								src="images/icons/instagram.svg"
+								alt=""
+							/>
+						</a>
+						<a
+							href=""
+							class="instagram__box-item wow animate__animated animate__fadeInUp"
+							data-wow-delay="0.8s"
+							data-wow-offset="110"
+							target="_blank"
+						>
+							<img
+								class="instagram-img"
+								src="images/img/instagram_4.webp"
+								alt=""
+							/>
+							<img
+								class="instagram-icons"
+								src="images/icons/instagram.svg"
+								alt=""
+							/>
+						</a>
+						<a
+							href=""
+							class="instagram__box-item wow animate__animated animate__fadeInUp"
+							data-wow-delay="1s"
+							data-wow-offset="110"
+							target="_blank"
+						>
+							<img
+								class="instagram-img"
+								src="images/img/instagram_5.webp"
+								alt=""
+							/>
+							<img
+								class="instagram-icons"
+								src="images/icons/instagram.svg"
+								alt=""
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="foooter__inner">
+					<div class="footer__item">
+						<div class="footer__item-logo">
+							<a href="#" class="footer_logo logo">Plant</a>
+						</div>
+						<p class="footer__text">
+							Lorem ipsum dolor sit amet, consectetur adi piscing elit. Diam
+							nibh posuere duis eu non sit integer at placerat amet.
+						</p>
+						<div class="footer__item-social">
+							<a href="#" class="footer__item-social-link">
+								<img src="images/icons/facebook.svg" alt="" />
+							</a>
+							<a href="#" class="footer__item-social-link">
+								<img src="images/icons/twitter.svg" alt="" />
+							</a>
+							<a href="#" class="footer__item-social-link">
+								<img src="images/icons/Instagram_footer.svg" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="footer__item">
+						<div class="footer__item-ttitle">Navigation</div>
+						<div class="footer__navigation">
+							<a href="#" class="footer__navigation-link footer-link">Home</a>
+							<a href="#" class="footer__navigation-link footer-link">About</a>
+							<a href="#" class="footer__navigation-link footer-link"
+								>Help & Support</a
+							>
+							<a href="#" class="footer__navigation-link footer-link"
+								>Product</a
+							>
+						</div>
+					</div>
+					<div class="footer__item">
+						<div class="footer__item-ttitle">About Us</div>
+						<div class="footer_about">
+							<a href="#" class="footer__about-link footer-link">Contact</a>
+							<a href="#" class="footer__about-link footer-link">Address</a>
+							<a href="#" class="footer__about-link footer-link">Blog</a>
+							<a href="#" class="footer__about-link footer-link">About Us</a>
+						</div>
+					</div>
+					<div class="footer__item">
+						<div class="footer__item-ttitle">Help</div>
+						<div class="footer_help">
+							<a href="#" class="footer__help-link footer-link"
+								>Coustomers Services</a
+							>
+							<a href="#" class="footer__help-link footer-link">FAQs</a>
+							<a href="#" class="footer__help-link footer-link"
+								>We Are Hiring</a
+							>
+							<a href="#" class="footer__help-link footer-link">Returns</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<button class="scroll-to-top" id="scrollToTopBtn" title="Наверх">↑</button>
+	</body>
+</html>
