@@ -83,38 +83,26 @@ window.addEventListener('scroll', () => {
 	}
 })
 
-// Открытие формы логина
+function openPopup(wrapperIndex, formClass) {
+	document
+		.querySelectorAll('.wrapper')
+		.forEach(w => w.classList.remove('active-popup'))
+	document
+		.querySelectorAll('.form__box')
+		.forEach(f => (f.style.display = 'none'))
+	document
+		.querySelectorAll('.wrapper')
+		[wrapperIndex].classList.add('active-popup')
+	document.querySelector(`.form__box.${formClass}`).style.display = 'block'
+	document.querySelector('.overlay').classList.add('active')
+}
+
 document.querySelectorAll('.btn-login-popup').forEach(button => {
-	button.addEventListener('click', () => {
-		document
-			.querySelectorAll('.wrapper')
-			.forEach(w => w.classList.remove('active-popup'))
-		document
-			.querySelectorAll('.form__box')
-			.forEach(f => (f.style.display = 'none'))
-
-		document.querySelectorAll('.wrapper')[0].classList.add('active-popup') // login
-		document.querySelectorAll('.form__box.login')[0].style.display = 'block'
-
-		document.querySelector('.overlay').classList.add('active')
-	})
+	button.addEventListener('click', () => openPopup(0, 'login'))
 })
 
-// Открытие формы регистрации
 document.querySelectorAll('.btn-register-popup').forEach(button => {
-	button.addEventListener('click', () => {
-		document
-			.querySelectorAll('.wrapper')
-			.forEach(w => w.classList.remove('active-popup'))
-		document
-			.querySelectorAll('.form__box')
-			.forEach(f => (f.style.display = 'none'))
-
-		document.querySelectorAll('.wrapper')[1].classList.add('active-popup') // register
-		document.querySelectorAll('.form__box.register')[0].style.display = 'block'
-
-		document.querySelector('.overlay').classList.add('active')
-	})
+	button.addEventListener('click', () => openPopup(1, 'register'))
 })
 
 // Закрытие по иконке "крестик"
