@@ -283,6 +283,7 @@ li {
 	align-items: center;
 	overflow: hidden;
 	transform: scale(0);
+	transition: transform 0.4s ease;
 
 	position: fixed;
 	top: 50%;
